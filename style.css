@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    background-color: #FCD232 !important;
+}
+
+.bar {
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.lab {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/brainster-bg.png);
+    background-repeat: no-repeat;
+    background-position-y: 38%;
+    background-position-x: 45%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lab-text {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: 1rem;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.box {
+    padding: 1rem;
+}
+
+.checkboxes {
+    background-color: #302F38;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkboxes:not(:last-child) {
+    border-right: 1px solid #424242;
+}
+
+.checkboxes label {
+    display: inline-block;
+    width: 90%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.checkboxes input {
+    display: none;
+}
+
+.hire {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 0px 100px;
+    margin: 0;
+    font-size: 54px;
+    font-weight: bolder;
+}
+
+.content {
+    min-height: calc(100vh - 40px);
+}
+
+.card-type {
+    color: #302F38;
+    background-color: #FCD232;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.card {
+    opacity: 0.92;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+    border: transparent!important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.8);
+    transition: 0.4s ease-in-out;
+}
+
+#typeList {
+    min-height: 50px;
+    background-color: #ffffff;
+}
+
+#typeList option {
+    margin-top: 10px;
+}
+
+#show-more {
+    display: none;
+}
+
+.footer {
+    background-color: #302F38;
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width:1198px) {
+    .navbar-brand {
+        margin: 10px 20px!important;
+    }
+}
+
+@media(max-width:992px) {
+    .nav-item {
+        margin: 0.5rem;
+    }
+    .card {
+        opacity: 1;
+    }
+    .card:hover {
+        transform: scale(1)
+    }
+    .checkboxes:not(:last-child) {
+        border-right: none;
+    }
+    .checkboxes:not(:last-child) {
+        border-bottom: 1px solid #424242;
+    }
+    .hire {
+        padding: 80px 0px 60px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar-toggler {
+        margin: 10px 20px!important;
+    }
+    .navbar {
+        padding: 8px 0px!important;
+    }
+    .nav-link {
+        color: white!important;
+        border-bottom: 1px solid #424242;
+        text-align: start;
+    }
+    #navbarContent {
+        background-color: #302F38;
+        padding: 50px 20px!important;
+    }
+    .lab {
+        background-image: none;
+        height: 30vh;
+    }
+    .lab-text {
+        color: #302F38;
+    }
+    .hire-form {
+        margin-bottom: 4rem;
+    }
+    .checkmark span {
+        font-size: 20px;
+    }
+    .nav-item {
+        padding-top: 5px;
+    }
+    .box {
+        display: none;
+    }
+    .box:nth-of-type(-n+6) {
+        display: inline-block;
+    }
+    #show-more {
+        display: inline-block;
+        font-weight: bold;
+    }
+}

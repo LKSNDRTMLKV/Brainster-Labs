@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brainster</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Aleksandar Temelkov" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row bar">
+                <div class="offset-xl-1 col-xl-10 p-0">
+                    <nav class="navbar fixed navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="main.html">
+                            <img src="./images/brainster-logo.png" alt="brainster-logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold"
+                                        href="https://marketpreneurs.brainster.co">Академија за маркетинг</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="http://codepreneurs.co/">Академија за
+                                        програмирање</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold"
+                                        href="https://datascience.brainster.co/">Академија
+                                        за data science</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link font-weight-bold" href="https://design.brainster.co/">Академија
+                                        за
+                                        дизајн</a>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="hire.html"> <button type="submit"
+                                            class="btn btn-danger px-3 font-weight-bold">Вработи наш
+                                            студент</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="hire text-dark">Вработи Студенти</p>
+
+        <form class="hire-form">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6">
+                        <label for="name" class="text-dark h5 mt-3">Име и Презиме</label>
+                        <input required type="text" class="form-control font-italic p-4" id="name"
+                            placeholder="Вашето Име и Презиме">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nameCompany" class="text-dark h5 mt-3">Име на Компанија</label>
+                        <input required type="text" class="form-control font-italic p-4" id="nameCompany"
+                            placeholder="Име на Вашата Компанија">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="e-mail" class="text-dark h5 mt-3">Контакт Е-Маил</label>
+                        <input required type="email" class="form-control font-italic p-4" id="e-mail"
+                            placeholder="Контакт Е-маил">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="number" class="text-dark h5 mt-3">Контакт Телефон</label>
+                        <input required type="number" class="form-control font-italic p-4" id="number"
+                            placeholder="Контакт Телефон на Вашата Компанија">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="typeList" class="text-dark h5 mt-3">Тип на Студенти</label>
+                        <select style="background-color: white;" name="studentType" id="typeList"
+                            class="form-control font-weight-bold">
+                            <option value="mar" class="">Студенти од маркетинг</option>
+                            <option value="pro" class="">Студенти од програмирање</option>
+                            <option value="ds" class="">Студенти од data science</option>
+                            <option value="des" class="">Студенти од дизајн</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit"
+                            class="form-control d-flex align-items-center justify-content-center btn-lg bg-danger text-white mt-5 p-4">Испрати</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <p class="text-white py-2 m-0">Изработено со <i class="fas fa-heart text-danger"></i> од студентите на Браинстер
+        </p>
+    </div>
+
+
+
+    <!-- Latest Font-Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
